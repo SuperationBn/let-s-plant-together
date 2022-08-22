@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,800;0,900;1,600&display=swap');
+
+:root {
+  --colorOrange: #F0941F;
+  --colorRed: #EF6024;
+  --colorGris: #90A19D;
+  --colorAzul: #196774;
+
+  /* THEME */
+  --bgColorLigth: #f4f4f4;
+  --h1ColorLigth: rgba(42, 40, 40, 0.951);
+  --h2ColorLigth: rgba(51, 50, 50, 0.908);
+  --h3ColorLigth: rgba(51, 50, 50, 0.816);
+  --pColorLigth: rgba(16, 15, 15, 0.53);
+  /* ---------------------------- */
+  /* ---------------------------- */
+  /* ---------------------------- */
+  --bgColorDark: #282625;
+  --h1ColorDark: rgba(255, 255, 255, 0.915);
+  --h2ColorDark: rgba(255, 255, 255, 0.843);
+  --h3ColorDark: rgba(255, 255, 255, 0.721);
+  --pColorDark: rgba(255, 255, 255, 0.5);
+  /* THEME */
+}
+
+.themeLigth {
+  --bgColor: var(--bgColorLigth);
+  --h1Color: var(--h1ColorLigth);
+  --h2Color: var(--h2ColorLigth);
+  --h3Color: var(--h3ColorLigth);
+  --pColor: var(--pColorLigth);
+}
+
+.themeDark {
+  --bgColor: var(--bgColorDark);
+  --h1Color: var(--h1ColorDark);
+  --h2Color: var(--h3ColorDark);
+  --h3Color: var(--h3ColorDark);
+  --pColor: var(--pColorDark);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style: none;
+  transition: all 0.2s ease-in;
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bgColor);
+  overflow-x: hidden;
+}
+
+h1 {
+  color: var(--h1Color);
+}
+
+h2 {
+  color: var(--h2Color);
+}
+
+h3 {
+  color: var(--h3Color);
+}
+
+h4 {
+  color: var(--h3Color);
+}
+
+p {
+  color: var(--pColor);
+}
+
+li {
+  color: var(--pColor);
+}
+
+.icon {
+  color: var(--pColor);
+}
+
+section {
+  background: var(--bgColor);
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0.7rem 3rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.881);
+  background: var(--colorRed);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.236);
+}
+
+button:hover {
+  background-color: #f78534;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.391);
+  /* color: #ff6320; */
+}
+
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 54%;
+  }
+}
